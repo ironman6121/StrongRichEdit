@@ -1,4 +1,3 @@
-apply plugin: 'com.android.application'
 apply plugin: 'com.android.library'
 //添加两个插件
 apply plugin: 'com.github.dcendents.android-maven'
@@ -8,14 +7,13 @@ apply plugin: 'com.jfrog.bintray'
 version = "1.0.0"
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 21
     buildToolsVersion "25.0.2"
     resourcePrefix "strongRichEdit__"    //这个随便填
 
     defaultConfig {
-        applicationId "com.lemon.strongrichedit"
         minSdkVersion 16
-        targetSdkVersion 25
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
 
@@ -36,11 +34,11 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:appcompat-v7:21.+'
 }
 
-//def siteUrl = 'https://github.com/pinguo-zhouwei/CustomPopwindow'      // 项目的主页
-//def gitUrl = 'https://github.com/pinguo-zhouwei/CustomPopwindow.git'   // Git仓库的url
+def siteUrl = 'https://github.com/ironman6121/StrongRichEdit'      // 项目的主页
+def gitUrl = 'https://github.com/ironman6121/StrongRichEdit.git'   // Git仓库的url
 group = "com.lemon.strongrichedit"                                        // Maven Group ID for the artifact，一般填你唯一的包名
 install {
     repositories.mavenInstaller {
