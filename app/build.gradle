@@ -4,7 +4,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 // This is the library version used when deploying the artifact
 // 你项目的版本号
-version = "1.0.0"
+version = "1.0.1"
 
 android {
     compileSdkVersion 21
