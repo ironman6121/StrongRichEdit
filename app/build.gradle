@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
+
 android {
     compileSdkVersion 21
     buildToolsVersion "25.0.2"
-    resourcePrefix "strongRichEdit__"    //这个随便填
 
     defaultConfig {
         applicationId "com.lemon.strongrichedit"
@@ -20,9 +20,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:21.+'
+    compile project(':strongrichedit')
 }
-
-

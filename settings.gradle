@@ -1,1 +1,1 @@
-include ':app', ':StrongRichEditLib'
+include ':app', ':strongrichedit'

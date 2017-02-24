@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class MainActivity extends Activity {
+    RichEditor richEditor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

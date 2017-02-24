@@ -4,13 +4,11 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 // This is the library version used when deploying the artifact
 // 你项目的版本号
-version = "1.0.3"
-
+version = "1.0.0"
 android {
     compileSdkVersion 21
     buildToolsVersion "25.0.2"
-    resourcePrefix "strongRichEdit__"    //这个随便填
-
+    resourcePrefix "customPop__"    //这个随便填
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 21
@@ -18,7 +16,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
     buildTypes {
         release {
@@ -47,7 +44,7 @@ install {
             project {
                 packaging 'aar'
                 // Add your description here
-                name 'a custom control'     //项目描述
+                name 'Android webview widget'     //项目描述
                 url siteUrl
                 // Set your license
                 licenses {
@@ -58,9 +55,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'tony'        //填写的一些基本信息
+                        id 'ironman6121'        //填写的一些基本信息
                         name 'TonyWang'
-                        email 'tony.wang@ichunshen,com'
+                        email 'tony.wang@ichunshen.com'
                     }
                 }
                 scm {
@@ -97,7 +94,7 @@ bintray {
     pkg {
         userOrg = "lemon"//JCenter上创建的的Organization
         repo = "maven"//你要上传的库的名字
-        name = "StrongRichEdit"    //发布到JCenter上的项目名字
+        name = "Strong-Rich-Edit"    //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]

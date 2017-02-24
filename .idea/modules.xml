@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StrongRichEdit.iml" filepath="$PROJECT_DIR$/StrongRichEdit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/StrongRichEditLib/StrongRichEditLib.iml" filepath="$PROJECT_DIR$/StrongRichEditLib/StrongRichEditLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/strongrichedit/strongrichedit.iml" filepath="$PROJECT_DIR$/strongrichedit/strongrichedit.iml" />
     </modules>
   </component>
 </project>
