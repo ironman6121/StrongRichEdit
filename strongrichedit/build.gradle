@@ -76,11 +76,24 @@ task sourcesJar(type: Jar) {
 task javadoc(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    options.encoding "UTF-8"
+    options.charSet 'UTF-8'
+    options.author true
+    options.version true
+    options.links "https://github.com/linglongxin24/FastDev/tree/master/mylibrary/docs/javadoc"
+    failOnError false
 }
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
+
+//拷贝javadoc文件
+task copyDoc(type: Copy) {
+    from "${buildDir}/docs/"
+    into "docs"
+}
+
 artifacts {
     archives javadocJar
     archives sourcesJar
